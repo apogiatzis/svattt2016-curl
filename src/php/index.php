@@ -44,7 +44,6 @@
               $url = strtolower(escapeshellarg($_POST['url']));
               $ret = `curl -v $url 2>&1`;
               echo "<p>URL: ".$url."</p>";
-              file_put_contents("_____l0g.txt","{$_SERVER['REMOTE_ADDR']} = $url\r\n", FILE_APPEND | LOCK_EX);
               if( !preg_match('/(\.localhost|%|flag)/is',$url,$matches) && !preg_match("/(Connected.*\(127\..*?\))/is",$ret,$matches)) {
                 echo "<br /><pre>$ret</pre>";
               } else {
