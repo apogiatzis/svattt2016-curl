@@ -38,5 +38,5 @@ docker-compose build
 ```
 docker-compose run
 ```
-
-### Disclaimer: I am not the creator of this challenge. This was adapted directly from: https://github.com/l4wio/CTF-challenges-by-me/tree/master/svattt-2016/quals/challenges/web/cURL
+---
+**Disclaimer**: I am not the creator of this challenge. This was adapted directly from: https://github.com/l4wio/CTF-challenges-by-me/tree/master/svattt-2016/quals/challenges/web/cURL
