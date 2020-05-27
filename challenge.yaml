@@ -17,5 +17,5 @@ deploy:
     build:
       - docker-compose build
     run:
-      - docker-compose run -d
+      - docker-compose up -d
         
