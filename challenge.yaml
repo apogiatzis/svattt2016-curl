@@ -1,6 +1,6 @@
 challenge:
     ctf: cybermouflons-ctf
-    slug: svattt2016-curl
+    slug: svattt2016_curl
     author: l4w
     category: pwn
     title: SVATTT2016-cURL
