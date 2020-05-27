@@ -11,7 +11,7 @@ challenge:
         Solve like that ...........
 
         Payload:
-        `http://google.com#@127.0.0.1:80/fla[g-h].php`
+        `http://apache/fla[g-h].php`
     achievables:
         - flag: fl4g{t3st_flag}
           points: 100

@@ -44,7 +44,7 @@
               $url = strtolower(escapeshellarg($_POST['url']));
               $ret = `curl -v $url 2>&1`;
               echo "<p>URL: ".$url."</p>";
-              if( !preg_match('/(\.localhost|%|flag)/is',$url,$matches) && !preg_match("/(Connected.*\(127\..*?\))/is",$ret,$matches)) {
+              if( !preg_match('/(\.localhost|%|flag)/is',$url,$matches) && !preg_match("/(Connected.*\(172\..*?\))/is",$ret,$matches)) {
                 echo "<br /><pre>$ret</pre>";
               } else {
                 echo "<font color=Red>Hacker detected [{$matches[1]}]!</font>";
@@ -62,9 +62,10 @@
 
 <!--
 // flag.php
+$host = gethostbyname('php');
 $ip = $_SERVER['REMOTE_ADDR'];
 echo $ip."\n";
-if($ip === '127.0.0.1' || $ip === '::1') echo "SVATTT{XXX}";
+if($ip === $host) echo "fl4g{XXXX}";
 -->
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -62,9 +62,10 @@
 
 <!--
 // flag.php
+$host = gethostbyname('php');
 $ip = $_SERVER['REMOTE_ADDR'];
 echo $ip."\n";
-if($ip === '127.0.0.1' || $ip === '::1') echo "SVATTT{XXX}";
+if($ip === $host) echo "fl4g{XXXX}";
 -->
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

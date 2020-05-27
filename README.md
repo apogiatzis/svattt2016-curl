@@ -20,7 +20,7 @@ Someday, SSRF would turn to RCE.
 
 Payload:
 
-`http://google.com#@127.0.0.1:80/fla[g-h].php`
+`http://apache/fla[g-h].php`
 
  ## Flag
 `fl4g{t3st_flag}`

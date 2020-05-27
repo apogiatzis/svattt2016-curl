@@ -1,3 +1,4 @@
-FROM php:7.2.7-fpm-alpine3.7
+FROM mikolatero/php5.6-fpm-alpine
 RUN apk update; \
-    apk upgrade;
+    apk upgrade; \
+    apk add curl
