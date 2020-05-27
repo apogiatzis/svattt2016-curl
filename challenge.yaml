@@ -1,8 +1,9 @@
 challenge:
     ctf: cybermouflons-ctf
+    slug: svattt2016-curl
     author: l4w
     category: pwn
-    title: pwn-test-chall
+    title: SVATTT2016-cURL
     difficulty: easy
     description: >
         This is a simple CTF Challenge
