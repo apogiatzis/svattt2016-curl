@@ -1,5 +1,5 @@
 challenge:
-    ctf: cybermouflons-ctf
+    ctf: svattt2016
     slug: svattt2016_curl
     author: l4w
     category: pwn
@@ -17,8 +17,11 @@ challenge:
           points: 100
 
 deploy:
-    build:
-      - docker-compose build
-    run:
-      - docker-compose up -d
+    stages:
+      build:
+        - docker-compose build
+      run:
+        - docker-compose up -d
+    ports:
+        - 8080
         
