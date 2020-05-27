@@ -13,8 +13,8 @@ challenge:
           points: 100
 
 deploy:
-    - build:
-        - docker-compose build
-    - run:
-        - docker-compose run
+    build:
+      - docker-compose build
+    run:
+      - docker-compose run
         
