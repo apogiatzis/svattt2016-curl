@@ -1,0 +1,20 @@
+challenge:
+    ctf: cybermouflons-ctf
+    author: l4w
+    category: pwn
+    title: pwn-test-chall
+    difficulty: easy
+    description: >
+        This is a simple CTF Challenge
+    solution: >
+        Solve like that ...........
+    achievables:
+        - flag: fl4g{t3st_flag}
+          points: 100
+
+deploy:
+    - build:
+        - docker-compose build
+    - run:
+        - docker-compose run
+        

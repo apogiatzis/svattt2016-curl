@@ -1,0 +1,21 @@
+version: "3.2"
+services:
+  php:
+    build:
+      context: ./src
+      dockerfile: Dockerfile-php
+    image: cybermouflons-ctf/curl-php
+    volumes:
+      - ./src/php:/var/www/html/
+  apache:
+    build:
+      context: ./src
+      dockerfile: Dockerfile-apache
+    image: cybermouflons-ctf/curl-apache
+    depends_on:
+      - php
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src/php:/var/www/html/
+
